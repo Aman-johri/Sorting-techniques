@@ -1,0 +1,24 @@
+
+
+
+class SelectionSort {
+    public static void main(String[] args){
+        String[] a ={"deepak","aman","deepam","kanak","ayush"};
+        String temp1 ="";
+        for (int i = 0; i < a.length-1; i++) {
+            int min = i;
+            for (int j = i+1; j < a.length; j++) {
+                if (a[j].compareTo(a[min]) < 0){
+                    min =j;
+                }
+            }
+            temp1 = a[i];
+            a[i] = a[min];
+            a[min] = temp1;
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+        }
+    }
+
